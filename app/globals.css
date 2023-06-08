@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/poppins.woff2') format('woff2'),
+       url('/fonts/poppins.woff') format('woff');
+  /* tambahkan format font lainnya jika tersedia */
+  font-weight: normal;
+  font-style: normal;
+}
+
+.table-style th {
+  height: 80px;
+}
+.table-style td {
+  padding: 20px 46px; /* atur ukuran padding sesuai kebutuhan */
+}
+.table-style tbody {
+  height: 80px;
+  width: 40px;
+}
+.table-style tbody tr:nth-child(even) {
+  background-color: #f2f2f2; /* warna untuk baris genap */
+}
+
+.table-style tbody tr:nth-child(odd) {
+  background-color: #ffffff; /* warna untuk baris ganjil */
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
